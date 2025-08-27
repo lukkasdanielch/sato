@@ -68,7 +68,8 @@ class terceiraTela : ComponentActivity() {
     @Preview
     @Composable
     fun tela3() {
-        var modelo by remember { mutableStateOf("") }
+        var modelo by remember { mutableStateOf("")}
+            var placa by remember { mutableStateOf("") }
         Column(modifier = Modifier.padding(10.dp)) {
 
 
@@ -85,8 +86,8 @@ class terceiraTela : ComponentActivity() {
                 Spacer(modifier = Modifier.height(16.dp))
                 Row {
                     TextField(
-                        value = modelo,
-                        onValueChange = { modelo = it },
+                        value = placa,
+                        onValueChange = { placa = it },
                         label = { Text("Placa") },
                         modifier = Modifier
                             .fillMaxWidth()
@@ -95,7 +96,10 @@ class terceiraTela : ComponentActivity() {
                     )
                 }
                 Spacer(modifier = Modifier.height(16.dp))
-            GridDeCards()
+            Box(modifier = Modifier.weight(1f)) { // ocupa o espaço disponível
+                GridDeCards()
+            }
+
             Salvar() {
                 val intent = Intent(this@terceiraTela, SegundaTela::class.java)
                 startActivity(intent)
@@ -150,7 +154,7 @@ class terceiraTela : ComponentActivity() {
 
                         .height(56.dp),
                     colors = ButtonDefaults.buttonColors(
-                        containerColor = Color(0xFF1E88E5),
+                        containerColor = Color(0xFFAA162C),
                         contentColor = Color.White
                     )
                 ) {
@@ -168,11 +172,11 @@ class terceiraTela : ComponentActivity() {
                 .fillMaxWidth()
                 .height(56.dp),
             colors = ButtonDefaults.buttonColors(
-                containerColor = Color(0xFF1E88E5),
+                containerColor = Color(0xFFAA162C),
                 contentColor = Color.White
             )
         ) {
-            Text("+ Salvar")
+            Text("Salvar")
         }
     }
     }

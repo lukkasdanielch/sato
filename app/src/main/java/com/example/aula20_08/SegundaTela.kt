@@ -37,6 +37,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.aula20_08.ui.theme.Aula2008Theme
 
@@ -65,6 +66,7 @@ class SegundaTela : ComponentActivity() {
         }
     }
 
+@Preview
     @Composable
     fun TelaComGridEBotao()  {
         Column(
@@ -199,7 +201,7 @@ class SegundaTela : ComponentActivity() {
 
                         .height(56.dp),
                     colors = ButtonDefaults.buttonColors(
-                        containerColor = Color(0xFF1E88E5),
+                        containerColor = Color(0xFFAA162C),
                         contentColor = Color.White
                     )
                 ) {
@@ -217,7 +219,7 @@ class SegundaTela : ComponentActivity() {
                 .fillMaxWidth()
                 .height(56.dp),
             colors = ButtonDefaults.buttonColors(
-                containerColor = Color(0xFF1E88E5),
+                containerColor = Color(0xFFAA162C),
                 contentColor = Color.White
             )
         ) {
