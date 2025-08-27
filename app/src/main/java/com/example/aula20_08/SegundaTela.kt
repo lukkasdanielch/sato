@@ -2,7 +2,6 @@ package com.example.aula20_08
 
 import android.content.Intent
 import android.os.Bundle
-import android.service.autofill.OnClickAction
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -38,11 +37,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.aula20_08.ui.theme.Aula2008Theme
 
-class MainActivity2 : ComponentActivity() {
+class SegundaTela : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -88,7 +86,7 @@ class MainActivity2 : ComponentActivity() {
 
             // Botão abaixo do grid
             Botao(){
-                val intent = Intent(this@MainActivity2, terceiraTela::class.java)
+                val intent = Intent(this@SegundaTela, terceiraTela::class.java)
                 startActivity(intent)
             }
         }

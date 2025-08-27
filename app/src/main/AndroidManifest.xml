@@ -17,7 +17,7 @@
             android:label="@string/title_activity_terceira_tela"
             android:theme="@style/Theme.Aula2008" />
         <activity
-            android:name=".MainActivity2"
+            android:name=".SegundaTela"
             android:exported="false"
             android:label="@string/title_activity_main2"
             android:theme="@style/Theme.Aula2008" />
