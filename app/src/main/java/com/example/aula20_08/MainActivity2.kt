@@ -57,7 +57,7 @@ class MainActivity2 : ComponentActivity() {
                             .background(Color.Black) //
                     ) {
                         TelaComGridEBotao()
-                        asd
+
 
 
                     }
